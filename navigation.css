@@ -1,0 +1,39 @@
+.nav-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+    border-right: 1px solid rgb(232, 229, 229);
+}
+nav .sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    
+    z-index: 2;
+}
+nav .sidebar:hover {
+    background-color: rgb(238, 236, 236);
+}
+nav div img {
+    height: 25px;
+    margin-bottom: 10px;
+}
+.nav-cap {
+    font-size: 10px;
+
+    display: flex;
+    align-items: center;
+}

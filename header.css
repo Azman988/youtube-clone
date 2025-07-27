@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid rgb(232, 229, 229);
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 2;
+}
+header img {
+    height: 24px;
+    cursor: pointer;
+}
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* the header div code ends here */
+
+.left-section {
+    width: 135px;
+    padding-left: 25px;
+    flex-shrink: 0;
+}
+.youtube-icon {
+    height: 20px;
+}
+
+/* the left section code ends here */
+
+.middle-section {
+    flex: 1;
+    margin-left: 60px;
+}
+.search-box {
+    flex: 1;
+    width: 0;
+
+    height: 35px;
+    border: 1px solid rgb(230, 227, 227);
+    box-shadow: inset 0px 0px 0.4 rgba(0, 0, 0, 0.7);
+}
+.search-box::placeholder {
+    padding-left: 10px;
+    font-size: 17px;
+    color: rgb(164, 161, 161);
+}
+.search-icon {
+    background-color: rgb(247, 246, 246);
+    border: 1px solid rgb(212, 211, 211);
+    padding: 6.5px 18px;
+    margin-left: -1px;
+    cursor: pointer;
+
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tooltip {
+    position: absolute;
+    bottom: -55px;
+
+    background-color: rgb(130, 129, 129);
+    color: white;
+    padding: 4px 6px 4px 6px;
+
+    opacity: 0;
+    pointer-events: none;
+
+     
+}
+.search-icon:hover .tooltip {
+    opacity: 1;
+}
+.voice-search-icon {
+    background-color: rgb(247, 246, 246);
+    padding: 8px 9px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+/* the middle section code ends here */
+
+.right-section {
+    width: 190px;
+    flex-shrink: 0;
+    margin-left: 35px;
+    padding-right: 25px;
+}
+.notifications-icon-div {
+    position: relative;
+}
+.notifications-count {
+    position: absolute;
+    top: -1px;
+    right: -3px;
+
+    background-color: rgb(186, 11, 11);
+    color: white;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.channel-img {
+    height: 34px;
+    border-radius: 17px;
+}
